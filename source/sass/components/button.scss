@@ -1,0 +1,23 @@
+.button {
+  @include button-reset;
+
+  display: block;
+  min-width: 183px;
+  min-height: 39px;
+  padding: 19px 19px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-roboto;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  color: $white;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border: 4px solid $white;
+  background: transparent;
+}
+
+.button--header {
+  max-width: 233px;
+}
