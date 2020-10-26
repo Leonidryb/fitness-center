@@ -1,9 +1,19 @@
 .ticket-card {
-  width: 360px;
+  width: 31.03%;
   min-height: 448px;
   padding: 63px 77px;
   text-align: center;
   background-color: $white;
+
+  &:focus,
+  &:hover {
+    border-width: 7px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(120deg, #ed0233, #003eb7);
+    outline: none;
+    padding: 56px 70px;
+  }
 }
 
 .ticket-card h3 {
@@ -35,7 +45,6 @@
   font-weight: bold;
   color: $light-blue;
   margin: 0;
-  margin-bottom: 59px;
   margin-right: 43px;
 
   &::before {
@@ -76,5 +85,68 @@
 .ticket-card__price--full-day {
   &::before {
     content: "2700";
+  }
+}
+
+.ticket-card__button {
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+@media (max-width: $tablet) {
+  .ticket-card {
+    width: 442px;
+  }
+
+  .ticket-card__button {
+    margin: 0 auto;
+    margin-top: 34px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .ticket-card {
+    width: 290px;
+    min-height: 384px;
+    padding: 51px 40px;
+
+    &:focus,
+    &:hover {
+      padding: 44px 33px;
+    }
+  }
+
+  .ticket-card h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .ticket-card p {
+    margin-bottom: 53px;
+  }
+
+  .ticket-card__price {
+    font-size: 48px;
+    line-height: 72px;
+    margin-right: 31px;
+
+    &::before {
+      bottom: 12px;
+      right: -48px;
+      font-size: 80px;
+    }
+
+    &::after {
+      top: 14px;
+      right: -35px;
+      width: 24px;
+      height: 33px;
+      background: transparent url("../img/icon-rub-small.svg") no-repeat 0 0;
+    }
+  }
+
+  .ticket-card__button {
+    margin-top: 30px;
   }
 }

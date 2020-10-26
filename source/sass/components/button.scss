@@ -33,9 +33,36 @@
   }
 }
 
+.button--card {
+  min-width: 206px;
+  min-height: 64px;
+  padding: 20px 20px;
+  padding-top: 25px;
+  color: $blue;
+  border: 2px solid $blue;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    border: none;
+    padding: 22px 22px;
+    padding-top: 27px;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: $tablet) {
   .button--header {
     max-width: 183px;
+  }
+
+  .button--card {
+    max-width: 206px;
   }
 }
 
