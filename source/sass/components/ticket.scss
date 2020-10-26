@@ -1,0 +1,86 @@
+.ticket {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $light-grey;
+}
+
+.ticket__container {
+  padding-left: 103px;
+  padding-right: 103px;
+}
+
+.ticket h2 {
+  font-family: $font-bebas;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $blue;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+
+.ticket__list-limits {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 341px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.ticket__limit-button {
+  @include button-reset;
+
+  display: block;
+  position: relative;
+  min-width: 53px;
+  min-height: 11px;
+  padding: 0;
+  text-align: center;
+  font-family: $font-roboto;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(16, 38, 84, 0.5);
+  cursor: pointer;
+  background: transparent;
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d10a42;
+  }
+}
+
+.ticket__limit-button:hover,
+.ticket__limit-button:focus {
+  color: rgba(16, 38, 84, 1);
+  outline: none;
+
+  &::after {
+    display: block;
+  }
+}
+
+.ticket__list-types {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

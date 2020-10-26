@@ -1,0 +1,80 @@
+.ticket-card {
+  width: 360px;
+  min-height: 448px;
+  padding: 63px 77px;
+  text-align: center;
+  background-color: $white;
+}
+
+.ticket-card h3 {
+  font-family: $font-roboto;
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: bold;
+  color: $blue;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.ticket-card p {
+  font-family: $font-roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $grey-blue;
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.ticket-card__price {
+  z-index: 100;
+  position: relative;
+  font-family: $font-roboto;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  color: $light-blue;
+  margin: 0;
+  margin-bottom: 59px;
+  margin-right: 43px;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: -62px;
+    color: #e8e8e8;
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 0.48;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    width: 30px;
+    height: 42px;
+    background: transparent url("../img/icon-rub.svg") no-repeat 0 0;
+  }
+}
+
+.ticket-card__price--trainer {
+  &::before {
+    content: "5000";
+  }
+}
+
+.ticket-card__price--half-day {
+  &::before {
+    content: "1700";
+  }
+}
+
+.ticket-card__price--full-day {
+  &::before {
+    content: "2700";
+  }
+}

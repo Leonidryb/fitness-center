@@ -26,7 +26,7 @@
             <li>Групповые занятия</li>
             <li>Кардио-зона</li>
           </ul>
-          <a class="header__link button button--header" href="#">Купить абонемент</a>
+          <a class="header__link button button--header" href="#ticket">Купить абонемент</a>
         </div>
         <div class="header__img">
           <picture>
@@ -60,13 +60,60 @@
         </div>
         <div class="gym__media">
           <div class="gym__img">
-            <!-- 1х: 660px; 2x: 1320px -->
-            <img src="img/gym-desltop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="556" alt="Изображение тренажерного зала">
+            <picture>
+              <!-- 1х: 660px; 2x: 1320px -->
+            <source type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
+
+              <!-- 1х: 660px; 2x: 1320px -->
+              <img src="img/gym-desltop@1x.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="556" alt="Изображение тренажерного зала">
+            </picture>
           </div>
           <div class="gym__video">
-            <video controls="" width="364" height="228" poster="img/video-preview.jpg" alt="Видеоизображение тренажерного зала"></video>
+            <video controls="" width="364" height="228" poster="img/video-preview.jpg"></video>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="ticket" id="ticket">
+      <div class="ticket__container container">
+        <h2>Абонементы</h2>
+        <ul class="ticket__list-limits">
+          <li class="ticket__limit-item">
+            <button class="ticket__limit-button" type="button">1 месяц</button>
+          </li>
+          <li class="ticket__limit-item">
+            <button class="ticket__limit-button" type="button">6 месяцев</button>
+          </li>
+          <li class="ticket__limit-item">
+            <button class="ticket__limit-button" type="button">12 месяцев</button>
+          </li>
+        </ul>
+        <ul class="ticket__list-types">
+          <li class="ticket__types-item">
+            <div class="ticket-card">
+              <h3>С тренером</h3>
+              <p>12 занятий</p>
+              <span class="ticket-card__price ticket-card__price--trainer">5000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </div>
+          </li>
+          <li class="ticket__types-item">
+            <div class="ticket-card">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00</p>
+              <span class="ticket-card__price ticket-card__price--half-day">1700</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </div>
+          </li>
+          <li class="ticket__types-item">
+            <div class="ticket-card">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <span class="ticket-card__price ticket-card__price--full-day">2700</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
