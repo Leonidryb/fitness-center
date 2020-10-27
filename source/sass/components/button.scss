@@ -56,6 +56,22 @@
   }
 }
 
+.button--events {
+  min-height: 71px;
+  padding: 25px 25px;
+
+  &:focus,
+  &:hover {
+    border-color: #00b2ff;
+    color: #00b2ff;
+  }
+
+  &:active {
+    border-color: rgba(0, 178, 255, 0.5);
+    color: rgba(0, 178, 255, 0.5);
+  }
+}
+
 @media (max-width: $tablet) {
   .button--header {
     max-width: 183px;
