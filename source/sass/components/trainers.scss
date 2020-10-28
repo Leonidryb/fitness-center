@@ -6,6 +6,7 @@
 .trainers__container {
   padding-left: 103px;
   padding-right: 103px;
+  position: relative;
 }
 
 .trainers h2 {
@@ -31,8 +32,8 @@
 
 .trainers__item {
   position: relative;
-  width: 260px;
-  height: 294px;
+  width: 22.41%;
+  min-height: 294px;
 }
 
 .trainers__item:hover h3 {
@@ -49,10 +50,20 @@
   font-size: 18px;
   line-height: 27px;
   color: $white;
+  max-width: 146px;
 
   position: absolute;
   bottom: 4px;
-  left: 78px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 39px;
+  right: 0;
+}
+
+.trainers__item img {
+  width: 100%;
+  height: 294px;
+  object-fit: cover;
 }
 
 .trainers__about {
@@ -60,12 +71,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 260px;
-  height: 294px;
+  width: 100%;
+  min-height: 294px;
   background-color: rgba(16, 38, 84, 0.89);
   text-align: center;
-  padding: 52px 46px;
-  padding-right: 35px;
+  padding: 52px 17.69%;
+  padding-right: 13.46%;
 }
 
 .trainers__about p {
@@ -118,5 +129,133 @@
     height: 5px;
     border-radius: 50%;
     background-color: $white;
+  }
+}
+
+.trainers__button {
+  position: absolute;
+  top: 231px;
+  width: 16px;
+  height: 32px;
+}
+
+.trainers__button--prev {
+  left: 47px;
+  background: transparent url("../img/icon-btn-prev.svg") no-repeat 0 0;
+}
+
+.trainers__button--next {
+  right: 47px;
+  transform: rotate(180deg);
+  background: transparent url("../img/icon-btn-prev.svg") no-repeat 0 0;
+}
+
+@media (max-width: $tablet) {
+  .trainers {
+    padding-top: 49px;
+    padding-bottom: 100px;
+  }
+
+  .trainers__container {
+    padding-left: 101px;
+    padding-right: 101px;
+  }
+
+  .trainers h2 {
+    font-size: 42px;
+    line-height: 42px;
+    width: 129px;
+    padding-left: 0;
+    margin: 0 auto;
+    margin-bottom: 41px;
+  }
+
+  .trainers__item {
+    width: 47.3%;
+
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .trainers__item h3 {
+    left: 44px;
+  }
+
+  .trainers__button {
+    top: 214px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .trainers {
+    padding-top: 34px;
+    padding-bottom: 70px;
+  }
+
+  .trainers__container {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 32px;
+    width: 99px;
+    margin-bottom: 43px;
+  }
+
+  .trainers__item {
+    width: 100%;
+    min-height: 274px;
+
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+
+  .trainers__item img {
+    width: 100%;
+    height: 274px;
+    object-fit: cover;
+  }
+
+  .trainers__about {
+    min-height: 274px;
+    padding: 42px 14.6%;
+  }
+
+  .trainers__about-list {
+    margin: 0 auto;
+    margin-top: 33px;
+  }
+
+  .trainers__about-item {
+    padding-left: 16px;
+
+    &::before {
+      content: "";
+      left: 2px;
+    }
+  }
+
+  .trainers__button {
+    top: 202px;
+    width: 10px;
+    height: 19px;
+  }
+
+  .trainers__button--prev {
+    left: 14px;
+    background: transparent url("../img/icon-btn-prev-small.svg") no-repeat 0 0;
+  }
+
+  .trainers__button--next {
+    right: 14px;
+    background: transparent url("../img/icon-btn-prev-small.svg") no-repeat 0 0;
   }
 }
