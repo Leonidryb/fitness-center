@@ -1,0 +1,122 @@
+.trainers {
+  padding-top: 18px;
+  padding-bottom: 120px;
+}
+
+.trainers__container {
+  padding-left: 103px;
+  padding-right: 103px;
+}
+
+.trainers h2 {
+  font-family: $font-bebas;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding-left: 2px;
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.trainers__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.trainers__item {
+  position: relative;
+  width: 260px;
+  height: 294px;
+}
+
+.trainers__item:hover h3 {
+  display: none;
+}
+
+.trainers__item:hover .trainers__about {
+  display: block;
+}
+
+.trainers__item h3 {
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: $white;
+
+  position: absolute;
+  bottom: 4px;
+  left: 78px;
+}
+
+.trainers__about {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 294px;
+  background-color: rgba(16, 38, 84, 0.89);
+  text-align: center;
+  padding: 52px 46px;
+  padding-right: 35px;
+}
+
+.trainers__about p {
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: $white;
+  margin: 0;
+  margin-bottom: -3px;
+}
+
+.trainers__about-specialization {
+  font-family: $font-roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+}
+
+.trainers__about-list {
+  @include list-reset;
+
+  font-family: $font-roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $white;
+  text-align: start;
+
+  width: 170px;
+  margin-top: 33px;
+}
+
+.trainers__about-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+}
