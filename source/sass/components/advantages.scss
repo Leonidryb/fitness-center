@@ -31,10 +31,8 @@
 
 .advantages__item {
   position: relative;
-  // width: 340px;
   width: 32.69%;
   min-height: 158px;
-  // margin-right: 350px;
   margin-right: 33.65%;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
@@ -101,10 +99,6 @@
   }
 }
 
-.advantages__item--main {
-  border-bottom: none;
-}
-
 .advantages__item--space .advantages__wrapper {
   width: 205px;
   padding-left: 25px;
@@ -153,6 +147,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 35px 34px;
+  border-bottom: none;
 }
 
 .advantages__count {
@@ -191,3 +186,255 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .advantages {
+    padding-top: 99px;
+    padding-bottom: 92px;
+  }
+
+  .advantages__container {
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 768px;
+  }
+
+  .advantages h2 {
+    font-size: 42px;
+    line-height: 42px;
+    width: 321px;
+    margin-bottom: 43px;
+  }
+
+  .advantages__item {
+    position: relative;
+    width: 315px;
+    min-height: 120px;
+    margin-right: 5.89%;
+    border-bottom: none;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2px;
+  }
+
+  .advantages__item p {
+    letter-spacing: -0.01em;
+  }
+
+  .advantages__item--main {
+    position: static;
+    order: 3;
+    width: 65.19%;
+    min-height: 239px;
+    transform: none;
+    text-align: center;
+    padding: 13px 34px;
+    margin: 0 auto;
+  }
+
+  .advantages__count {
+    margin-bottom: 12px;
+  }
+
+
+  .advantages__count p {
+    padding-right: 3px;
+    margin-bottom: -17px;
+  }
+
+  .advantages__count span {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .advantages__text p {
+    width: 172px;
+    margin: 0 auto;
+  }
+
+  .advantages__item--space {
+    order: 1;
+    padding-left: 90px;
+
+    &::before {
+      left: 0;
+      top: 7px;
+      width: 89px;
+      height: 65px;
+      background-image: url("../img/advantages-space-tablet@1x.png");
+    }
+  }
+
+  .advantages__item--parking {
+    order: 2;
+    padding-left: 80px;
+
+    &::before {
+      left: -8px;
+      top: 7px;
+      width: 59px;
+      height: 65px;
+      background-image: url("../img/advantages-parking-tablet@1x.png");
+    }
+  }
+
+  .advantages__item--comfort {
+    order: 4;
+    padding-top: 40px;
+    padding-left: 90px;
+
+    &::before {
+      left: 0;
+      top: 50px;
+      width: 89px;
+      height: 65px;
+      background-image: url("../img/advantages-comfort-tablet@1x.png");
+    }
+  }
+
+  .advantages__item--expirience {
+    order: 5;
+    padding-top: 40px;
+    padding-left: 80px;
+
+    &::before {
+      left: -8px;
+      top: 50px;
+      width: 59px;
+      height: 65px;
+      background-image: url("../img/advantages-expirience-tablet@1x.png");
+    }
+  }
+
+  .advantages__item--space .advantages__wrapper {
+    width: 210px;
+    padding-left: 28px;
+    margin-top: 0;
+  }
+
+  .advantages__item--parking .advantages__wrapper {
+    width: 230px;
+    margin-top: 0;
+  }
+
+  .advantages__item--comfort .advantages__wrapper {
+    width: 210px;
+    padding-left: 28px;
+    padding-top: 3px;
+  }
+
+  .advantages__item--expirience .advantages__wrapper {
+    width: 235px;
+    padding-left: 0;
+    padding-top: 3px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .advantages {
+    padding-top: 69px;
+    padding-bottom: 23px;
+  }
+
+  .advantages__container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .advantages h2 {
+    font-size: 32px;
+    line-height: 32px;
+    width: 245px;
+    margin-bottom: 52px;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 150px;
+    padding: 20px 50px;
+    padding-top: 73px;
+    margin-right: 0;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  .advantages__item--space {
+    padding-left: 72px;
+    padding-right: 72px;
+
+    &::before {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+      background-image: url("../img/advantages-space-mobile@1x.png");
+    }
+  }
+
+  .advantages__item--parking {
+    padding-bottom: 22px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    &::before {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+      background-image: url("../img/advantages-parking-mobile@1x.png");
+    }
+  }
+
+  .advantages__item--comfort {
+    padding-left: 68px;
+    padding-right: 60px;
+
+    &::before {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+      background-image: url("../img/advantages-comfort-mobile@1x.png");
+    }
+  }
+
+  .advantages__item--expirience {
+    padding-left: 45px;
+    padding-right: 45px;
+
+    &::before {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+      background-image: url("../img/advantages-expirience-mobile@1x.png");
+    }
+  }
+
+  .advantages__item .advantages__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .advantages__item--comfort .advantages__wrapper {
+    padding-right: 7px;
+  }
+
+  .advantages__item--main {
+    min-height: 239px;
+    padding: 19px 34px;
+    margin-bottom: 50px;
+  }
+
+  .advantages__count {
+    margin-bottom: 10px;
+  }
+
+  .advantages__count p {
+    padding-right: 3px;
+    margin-bottom: -24px;
+  }
+}
