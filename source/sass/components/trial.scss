@@ -1,0 +1,22 @@
+.trial {
+  width: 50%;
+  min-height: 337px;
+  padding: 70px 103px;
+  background-color: $blue;
+}
+
+.trial__wrapper {
+  width: 410px;
+  min-height: 197px;
+  margin: 0 auto;
+}
+
+.trial h2 {
+  font-family: $font-bebas;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: $white;
+  margin: 0;
+}

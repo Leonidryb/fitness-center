@@ -330,8 +330,15 @@
         <h2>Отзывы</h2>
         <ul class="review__list">
           <li class="review__item">
-            <!-- 1х: 80px; 2x: 160px -->
-            <img src="img/review@1x.png" srcset="img/review@2x.jpg 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
+            <div class="review__img">
+              <picture>
+                <!-- 1х: 80px; 2x: 160px -->
+                <source type="image/webp" srcset="img/review@1x.webp 1x, img/review@2x.webp 2x">
+
+                <!-- 1х: 80px; 2x: 160px -->
+                <img src="img/review@1x.png" srcset="img/review@2x.jpg 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
+              </picture>
+            </div>
             <div class="review__text">
               <h3>Анна Орлова</h3>
               <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -339,8 +346,15 @@
           </li>
 
           <li class="review__item">
-            <!-- 1х: 80px; 2x: 160px -->
-            <img src="img/review@1x.png" srcset="img/review@2x.jpg 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
+            <div class="review__img">
+              <picture>
+                <!-- 1х: 80px; 2x: 160px -->
+                <source type="image/webp" srcset="img/review@1x.webp 1x, img/review@2x.webp 2x">
+
+                <!-- 1х: 80px; 2x: 160px -->
+                <img src="img/review@1x.png" srcset="img/review@2x.jpg 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
+              </picture>
+            </div>
             <div class="review__text">
               <h3>Анна Орлова</h3>
               <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -351,6 +365,38 @@
         <div class="review__button review__button--next"></div>
       </div>
     </section>
+    <div class="bottom-wrapper">
+      <section class="trial">
+        <div class="trial__wrapper">
+          <h2>Бесплатное занятие</h2>
+          <form class="form" method="post">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input type="text" name="name-field" id="name" placeholder="Имя" required="">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input type="tel" name="phone-field" id="phone" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Телефон" required="">
+            <button class="button button--trial" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__item">
+            <b>Адрес:</b>
+            <a class="contacts__link" href="https://maps.google.com/?q=Омск+ул+60+лет+Октября+7">г. Омск, ул. 60 лет Октября, 7</a>
+            <b>График работы:</b>
+            <p>Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          <div class="contacts__item">
+            <b>Телефон</b>
+            <a class="contacts__link" href="tel:88005555555">8-800-555-55-55</a>
+            <b>Email:</b>
+            <a class="contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 </body>
 </html>
