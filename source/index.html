@@ -369,30 +369,32 @@
       <section class="trial">
         <div class="trial__wrapper">
           <h2>Бесплатное занятие</h2>
-          <form class="form" method="post">
+          <form class="trial__form" method="post">
             <label class="visually-hidden" for="name">Имя</label>
-            <input type="text" name="name-field" id="name" placeholder="Имя" required>
+            <input type="text" name="name-field" id="name" placeholder="Имя" autocomplete="off" required>
             <label class="visually-hidden" for="phone">Телефон</label>
-            <input type="tel" name="phone-field" id="phone" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Телефон" required>
-            <button class="button button--trial" type="submit">Отправить</button>
+            <input type="tel" name="phone-field" id="phone" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Телефон" autocomplete="off" required>
+            <button class="trial__button button button--trial" type="submit">Отправить</button>
           </form>
         </div>
       </section>
 
       <section class="contacts">
-        <h2>Контакты</h2>
         <div class="contacts__wrapper">
-          <div class="contacts__item">
-            <b>Адрес:</b>
-            <a class="contacts__link" href="https://maps.google.com/?q=Омск+ул+60+лет+Октября+7">г. Омск, ул. 60 лет Октября, 7</a>
-            <b>График работы:</b>
-            <p>Пн-Вс: с 8:00 до 22:00</p>
-          </div>
-          <div class="contacts__item">
-            <b>Телефон</b>
-            <a class="contacts__link" href="tel:88005555555">8-800-555-55-55</a>
-            <b>Email:</b>
-            <a class="contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          <h2>Контакты</h2>
+          <div class="contacts__sub-wrapper">
+            <div class="contacts__item contacts__item--left">
+              <b>Адрес:</b>
+              <a class="contacts__link" href="https://maps.google.com/?q=Омск+ул+60+лет+Октября+7">г. Омск, ул. 60 лет Октября, 7</a>
+              <b>График работы:</b>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </div>
+            <div class="contacts__item contacts__item--right">
+              <b>Телефон:</b>
+              <a class="contacts__link" href="tel:88005555555">8-800-555-55-55</a>
+              <b>Email:</b>
+              <a class="contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </div>
           </div>
         </div>
       </section>

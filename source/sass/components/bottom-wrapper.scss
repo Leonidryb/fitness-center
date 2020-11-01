@@ -1,8 +1,14 @@
 .bottom-wrapper {
+  min-width: 320px;
   padding-left: 0;
   padding-right: 0;
-  border-top: 1px solid #74819c;
   display: flex;
   align-items: stretch;
   flex-wrap: nowrap;
+}
+
+@media (max-width: $tablet) {
+  .bottom-wrapper {
+    flex-direction: column;
+  }
 }
