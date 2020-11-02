@@ -9,10 +9,11 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .gym__text {
+  padding-top: 48px;
   width: 31%;
   min-width: 323px;
   margin-left: 5.17%;
@@ -45,6 +46,7 @@
 
 .gym__description p {
   margin-bottom: 10px;
+  padding-right: 5px;
 
   font-weight: 300;
   font-size: 16px;
@@ -84,6 +86,7 @@
   .gym__text {
     width: 510px;
     min-width: 502px;
+    padding-top: 0;
     margin: 0 auto;
     margin-bottom: 7px;
     text-align: center;
@@ -97,6 +100,10 @@
 
   .gym__text p {
     margin-bottom: 35px;
+  }
+
+  .gym__description {
+    padding-right: 0;
   }
 
   .gym__description p + p {

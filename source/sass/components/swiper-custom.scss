@@ -1,0 +1,144 @@
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  box-sizing: border-box;
+  top: 251px;
+  width: 16px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.swiper-button-prev {
+  left: 47px;
+  background: transparent url("../img/icon-btn-prev.svg") no-repeat 0 0;
+}
+
+.swiper-button-next {
+  right: 47px;
+  transform: rotate(180deg);
+  background: transparent url("../img/icon-btn-prev.svg") no-repeat 0 0;
+}
+
+.swiper-container {
+  width: 1160px;
+}
+
+.swiper-slide {
+  width: 260px;
+}
+
+.swiper-container-1 {
+  width: 560px;
+  overflow: hidden;
+}
+
+.swiper-container-1 .swiper-slide {
+  width: 560px;
+  box-sizing: border-box;
+}
+
+.review .swiper-button-prev {
+  top: 262px;
+  left: 0;
+}
+
+.review .swiper-button-next {
+  right: 0;
+  top: 262px;
+}
+
+@media (max-width: 1365px) {
+  .swiper-container {
+    width: 860px;
+  }
+
+  .trainers {
+    width: 1066px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .swiper-container {
+    width: 566px;
+  }
+
+  .trainers {
+    width: 768px;
+  }
+
+  .swiper-slide {
+    width: 268px;
+  }
+
+  .swiper-container-1 {
+    width: 566px;
+  }
+
+  .swiper-container-1 .swiper-slide {
+    width: 566px;
+  }
+
+  .review .swiper-button-prev,
+  .review .swiper-button-next {
+    top: 238px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .swiper-container {
+    width: 226px;
+  }
+
+  .trainers {
+    width: 290px;
+  }
+
+  .swiper-slide {
+    width: 226px;
+    height: 274px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 236px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+    background: transparent url("../img/icon-btn-prev-small.svg") no-repeat 0 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+    background: transparent url("../img/icon-btn-prev-small.svg") no-repeat 0 0;
+  }
+
+  .swiper-container-1 {
+    width: 226px;
+    min-width: 226px;
+  }
+
+  .swiper-container-1 .swiper-slide {
+    width: 226px;
+  }
+
+  .review .swiper-button-prev,
+  .review .swiper-button-next {
+    top: 265px;
+  }
+}

@@ -7,6 +7,32 @@
   <meta name="description" content="Фитнес центр - SUPERGYM в г. Омске, Тренажерный зал, групповые занятия, кардио-зона">
   <title>Фитнес центр - SUPERGYM</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <noscript>
+    <style>
+      .no-js {
+        display: none;
+      }
+
+      @media (max-width: 1365px) {
+        .trainers__item:nth-child(1) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 1199px) {
+        .trainers__item:nth-child(1),
+        .trainers__item:nth-child(2) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .trainers__item:nth-child(4) {
+          display: none;
+        }
+      }
+    </style>
+  </noscript>
 </head>
 <body>
   <header class="header">
@@ -145,11 +171,11 @@
       </div>
     </section>
     <section class="trainers" id="trainers">
-      <div class="trainers__container container">
+      <div class="trainers__container swiper-container">
         <h2>Тренеры</h2>
-        <ul class="trainers__list">
+        <ul class="trainers__list swiper-wrapper">
 
-          <li class="trainers__item">
+          <li class="trainers__item swiper-slide">
             <h3>Анна Павлова</h3>
             <picture>
               <!-- 1х: 260px; 2x: 520px -->
@@ -174,7 +200,7 @@
             </div>
           </li>
 
-          <li class="trainers__item">
+          <li class="trainers__item swiper-slide">
             <h3>Алексей Лавров</h3>
             <picture>
               <!-- 1х: 260px; 2x: 520px -->
@@ -199,7 +225,7 @@
             </div>
           </li>
 
-          <li class="trainers__item">
+          <li class="trainers__item swiper-slide">
             <h3>Александр Пашков</h3>
             <picture>
               <!-- 1х: 260px; 2x: 520px -->
@@ -224,7 +250,107 @@
             </div>
           </li>
 
-          <li class="trainers__item">
+          <li class="trainers__item swiper-slide">
+            <h3>Мария Кетова</h3>
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/trainer-4@1x.webp 1x, img/trainer-4@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <img src="img/trainer-4@1x.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Марии Кетовой">
+            </picture>
+            <div class="trainers__about">
+              <p>Мария Кетова</p>
+              <span class="trainers__about-specialization">CrossFit</span>
+              <ul class="trainers__about-list">
+                <li class="trainers__about-item">
+                  Certified Level 3 Trainer
+                </li>
+                <li class="trainers__about-item">
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li class="trainers__about-item">
+                  Опыт &#8211; 6 лет
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="trainers__item swiper-slide no-js">
+            <h3>Анна Павлова</h3>
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/trainer-1@1x.webp 1x, img/trainer-1@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <img src="img/trainer-1@1x.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Анны Павловой">
+            </picture>
+            <div class="trainers__about">
+              <p>Анна Павлова</p>
+              <span class="trainers__about-specialization">CrossFit</span>
+              <ul class="trainers__about-list">
+                <li class="trainers__about-item">
+                  Certified Level 3 Trainer
+                </li>
+                <li class="trainers__about-item">
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li class="trainers__about-item">
+                  Опыт &#8211; 6 лет
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="trainers__item swiper-slide no-js">
+            <h3>Алексей Лавров</h3>
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/trainer-2@1x.webp 1x, img/trainer-2@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <img src="img/trainer-2@1x.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
+            </picture>
+            <div class="trainers__about">
+              <p>Алексей Лавров</p>
+              <span class="trainers__about-specialization">CrossFit</span>
+              <ul class="trainers__about-list">
+                <li class="trainers__about-item">
+                  Certified Level 3 Trainer
+                </li>
+                <li class="trainers__about-item">
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li class="trainers__about-item">
+                  Опыт &#8211; 6 лет
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="trainers__item swiper-slide no-js">
+            <h3>Александр Пашков</h3>
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/trainer-3@1x.webp 1x, img/trainer-3@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <img src="img/trainer-3@1x.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Александра Пашкова">
+            </picture>
+            <div class="trainers__about">
+              <p>Александр Пашков</p>
+              <span class="trainers__about-specialization">CrossFit</span>
+              <ul class="trainers__about-list">
+                <li class="trainers__about-item">
+                  Certified Level 3 Trainer
+                </li>
+                <li class="trainers__about-item">
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li class="trainers__about-item">
+                  Опыт &#8211; 6 лет
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="trainers__item swiper-slide no-js">
             <h3>Мария Кетова</h3>
             <picture>
               <!-- 1х: 260px; 2x: 520px -->
@@ -250,9 +376,13 @@
           </li>
 
         </ul>
-        <div class="trainers__button trainers__button--prev"></div>
-        <div class="trainers__button trainers__button--next"></div>
       </div>
+        <button class="trainers__button trainers__button--prev swiper-button-prev" type="button">
+          <span class="visually-hidden">Переключение слайдера назад</span>
+        </button>
+        <button class="trainers__button trainers__button--next swiper-button-next" type="button">
+          <span class="visually-hidden">Переключение слайдера вперёд</span>
+        </button>
     </section>
     <section class="advantages" id="advantages">
       <div class="advantages__container container">
@@ -326,10 +456,10 @@
       </div>
     </section>
     <section class="review">
-      <div class="review__container container">
+      <div class="review__container container swiper-container-1">
         <h2>Отзывы</h2>
-        <ul class="review__list">
-          <li class="review__item">
+        <ul class="review__list swiper-wrapper">
+          <li class="review__item swiper-slide">
             <div class="review__img">
               <picture>
                 <!-- 1х: 80px; 2x: 160px -->
@@ -345,7 +475,7 @@
             </div>
           </li>
 
-          <li class="review__item">
+          <li class="review__item no-js swiper-slide">
             <div class="review__img">
               <picture>
                 <!-- 1х: 80px; 2x: 160px -->
@@ -361,9 +491,13 @@
             </div>
           </li>
         </ul>
-        <div class="review__button review__button--prev"></div>
-        <div class="review__button review__button--next"></div>
       </div>
+      <button class="trainers__button trainers__button--prev swiper-button-prev" type="button">
+        <span class="visually-hidden">Переключение слайдера назад</span>
+      </button>
+      <button class="trainers__button trainers__button--next swiper-button-next" type="button">
+        <span class="visually-hidden">Переключение слайдера вперёд</span>
+      </button>
     </section>
     <div class="bottom-wrapper">
       <section class="trial">
@@ -455,5 +589,8 @@
       </ul>
     </div>
   </footer>
+  <script src="js/vendor/vendor.js"></script>
+  <script src="js/vendor/swiper.js"></script>
+  <script src="js/custom/script.js"></script>
 </body>
 </html>

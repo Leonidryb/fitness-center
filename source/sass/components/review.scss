@@ -1,11 +1,14 @@
 .review {
   padding-top: 58px;
   padding-bottom: 120px;
+  width: 672px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .review__container {
-  padding-left: 103px;
-  padding-right: 103px;
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
 }
 
@@ -36,10 +39,6 @@
   margin: 0 auto;
   padding: 54px 62px;
   padding-bottom: 30px;
-
-  &:last-child {
-    display: none;
-  }
 }
 
 .review__img {
@@ -69,7 +68,7 @@
   font-family: $font-roboto;
   font-weight: normal;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 23px;
   color: $white;
   margin: 0;
 }
@@ -79,6 +78,7 @@
   top: 205px;
   width: 16px;
   height: 32px;
+  border: none;
 }
 
 .review__button--prev {
@@ -107,11 +107,12 @@
   .review {
     padding-top: 49px;
     padding-bottom: 100px;
+    width: 678px;
   }
 
   .review__container {
-    padding-left: 101px;
-    padding-right: 101px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .review h2 {
@@ -142,13 +143,14 @@
 
 @media (max-width: $mobile) {
   .review {
+    width: 290px;
     padding-top: 34px;
     padding-bottom: 70px;
   }
 
   .review__container {
-    padding-left: 47px;
-    padding-right: 47px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .review h2 {
@@ -190,6 +192,7 @@
 
   .review__item p {
     margin: 0;
+    line-height: 22px;
   }
 
   .review__button {

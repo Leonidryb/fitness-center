@@ -92,6 +92,12 @@
   margin-right: 16.1%;
 }
 
+.header__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header__social-list {
   @include list-reset;
 
