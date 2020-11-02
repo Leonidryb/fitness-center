@@ -12,6 +12,7 @@
 
   IMask(phoneInput, maskOptions);
 
+  // Slider trainers
   var mySwiper = new Swiper(slider, {
     loop: true,
     slidesPerView: 1,
@@ -41,6 +42,7 @@
     }
   });
 
+  // Slider review
   var mySwiper1 = new Swiper(slider1, {
     loop: true,
     slidesPerView: 1,
