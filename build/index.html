@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Фитнес центр - SUPERGYM в г. Омске, Тренажерный зал, групповые занятия, кардио-зона">
   <title>Фитнес центр - SUPERGYM</title>
+  <link rel="preload" href="fonts/BebasNeueRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
   <noscript>
     <style>
@@ -35,7 +41,7 @@
   </noscript>
 </head>
 <body>
-  <header class="header">
+  <header class="header header--outdated">
     <div class="header__container container">
       <div class="header__head">
         <a class="header__logo">
@@ -108,35 +114,92 @@
         <h2>Абонементы</h2>
         <ul class="ticket__list-limits">
           <li class="ticket__limit-item">
-            <button class="ticket__limit-button" type="button">1 месяц</button>
+            <button class="ticket__limit-button ticket__limit-button--active" data-tab="0" type="button">1 месяц</button>
           </li>
           <li class="ticket__limit-item">
-            <button class="ticket__limit-button" type="button">6 месяцев</button>
+            <button class="ticket__limit-button" data-tab="1" type="button">6 месяцев</button>
           </li>
           <li class="ticket__limit-item">
-            <button class="ticket__limit-button" type="button">12 месяцев</button>
+            <button class="ticket__limit-button" data-tab="2" type="button">12 месяцев</button>
           </li>
         </ul>
-        <ul class="ticket__list-types">
-          <li class="ticket__types-item ticket-card" tabindex="0">
-            <h3>С тренером</h3>
-            <p>12 занятий</p>
-            <span class="ticket-card__price ticket-card__price--trainer">5000</span>
-            <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
-          </li>
-          <li class="ticket__types-item ticket-card" tabindex="0">
-            <h3>Дневной</h3>
-            <p>с 8:00 до 17:00</p>
-            <span class="ticket-card__price ticket-card__price--half-day">1700</span>
-            <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
-          </li>
-          <li class="ticket__types-item ticket-card" tabindex="0">
-            <h3>Полный день</h3>
-            <p>с 8:00 до 22:00</p>
-            <span class="ticket-card__price ticket-card__price--full-day">2700</span>
-            <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
-          </li>
-        </ul>
+        <div class="ticket__tab">
+          <ul class="ticket__list-types">
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>С тренером</h3>
+              <p>12 занятий</p>
+              <p class="ticket-card__back">5000</p>
+              <span class="ticket-card__price ticket-card__price--trainer">5000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00</p>
+              <p class="ticket-card__back">1700</p>
+              <span class="ticket-card__price ticket-card__price--half-day">1700</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <p class="ticket-card__back">2700</p>
+              <span class="ticket-card__price ticket-card__price--full-day">2700</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ticket__tab ticket__tab--hide no-js">
+          <ul class="ticket__list-types">
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>С тренером</h3>
+              <p>72 занятия</p>
+              <p class="ticket-card__back">20000</p>
+              <span class="ticket-card__price ticket-card__price--trainer">20000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00</p>
+              <p class="ticket-card__back">6000</p>
+              <span class="ticket-card__price ticket-card__price--half-day">6000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <p class="ticket-card__back">11000</p>
+              <span class="ticket-card__price ticket-card__price--full-day">11000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ticket__tab ticket__tab--hide no-js">
+          <ul class="ticket__list-types">
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>С тренером</h3>
+              <p>144 занятия</p>
+              <p class="ticket-card__back">30000</p>
+              <span class="ticket-card__price ticket-card__price--trainer">30000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>Дневной</h3>
+              <p>с 8:00 до 17:00</p>
+              <p class="ticket-card__back">9000</p>
+              <span class="ticket-card__price ticket-card__price--half-day">9000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+            <li class="ticket__types-item ticket-card" tabindex="0">
+              <h3>Полный день</h3>
+              <p>с 8:00 до 22:00</p>
+              <p class="ticket-card__back">16000</p>
+              <span class="ticket-card__price ticket-card__price--full-day">16000</span>
+              <a class="ticket-card__button button button--card" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="events">
@@ -495,10 +558,10 @@
           </li>
         </ul>
       </div>
-      <button class="trainers__button trainers__button--prev swiper-button-prev" type="button">
+      <button class="review__button review__button--prev swiper-button-prev" type="button">
         <span class="visually-hidden">Переключение слайдера назад</span>
       </button>
-      <button class="trainers__button trainers__button--next swiper-button-next" type="button">
+      <button class="review__button review__button--next swiper-button-next" type="button">
         <span class="visually-hidden">Переключение слайдера вперёд</span>
       </button>
     </section>
@@ -590,7 +653,6 @@
     </div>
   </footer>
   <script src="js/vendor/vendor.js"></script>
-  <script src="js/vendor/swiper.js"></script>
   <script src="js/custom/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 .gym {
   padding-top: 120px;
-  padding-bottom: 116px;
+  padding-bottom: 119px;
 }
 
 .gym__container {
@@ -89,7 +89,7 @@
   content: "";
   position: absolute;
   top: 28%;
-  left: 37%;
+  left: 36%;
   width: 100px;
   height: 100px;
   background: url("../img/icon-play.svg");
@@ -110,7 +110,7 @@
 @media (max-width: $tablet) {
   .gym {
     padding-top: 99px;
-    padding-bottom: 96px;
+    padding-bottom: 99px;
   }
 
   .gym__container {
@@ -183,7 +183,7 @@
 @media (max-width: $mobile) {
   .gym {
     padding-top: 69px;
-    padding-bottom: 66px;
+    padding-bottom: 70px;
   }
 
   .gym__container {

@@ -1,6 +1,6 @@
 .ticket {
   position: relative;
-  padding-top: 118px;
+  padding-top: 119px;
   padding-bottom: 80px;
   background-color: $light-grey;
 
@@ -67,9 +67,18 @@
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
   background: transparent;
+}
+
+.ticket__limit-button:hover,
+.ticket__limit-button:focus {
+  color: rgba(16, 38, 84, 1);
+  outline: none;
+}
+
+.ticket__limit-button--active {
+  color: rgba(16, 38, 84, 1);
 
   &::after {
-    display: none;
     content: "";
     position: absolute;
     bottom: -12px;
@@ -77,16 +86,6 @@
     width: 100%;
     height: 2px;
     background-color: #d10a42;
-  }
-}
-
-.ticket__limit-button:hover,
-.ticket__limit-button:focus {
-  color: rgba(16, 38, 84, 1);
-  outline: none;
-
-  &::after {
-    display: block;
   }
 }
 
@@ -110,10 +109,25 @@
   }
 }
 
-@media (max-width: 1280px) {
+.ticket__tab--hide {
+  display: none;
+}
+
+.ticket__tab--show {
+  display: block;
+}
+
+@media (max-width: 1350px) {
   .ticket__container {
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .ticket__container {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -176,6 +190,10 @@
     &::after {
       display: none;
     }
+  }
+
+  .ticket__limit-button--active::after {
+    bottom: -13px;
   }
 
   .ticket__container {

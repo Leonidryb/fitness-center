@@ -5,6 +5,9 @@
   var phoneInput = document.querySelector('#phone');
   var slider = document.querySelector('.swiper-container');
   var slider1 = document.querySelector('.swiper-container-1');
+  var tabsBtnList = document.querySelectorAll('.ticket__limit-button');
+  var anchor = document.querySelector('.header__link');
+
   // Phone mask
   var maskOptions = {
     mask: '+{7}(000)000-00-00'
@@ -53,4 +56,36 @@
     },
   });
 
+  // Ticket cards tab
+  tabsBtnList.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var ticketsBtnActive = document.querySelector('.ticket__limit-button--active');
+      ticketsBtnActive.classList.remove('ticket__limit-button--active');
+      button.classList.add('ticket__limit-button--active');
+
+      var dataTab = button.getAttribute('data-tab');
+      var tabsList = document.querySelectorAll('.ticket__tab');
+
+      for (var i = 0; i < tabsList.length; i++) {
+        // eslint-disable-next-line
+        if (dataTab == i) {
+          tabsList[i].classList.add('ticket__tab--show');
+          tabsList[i].classList.remove('ticket__tab--hide');
+        } else {
+          tabsList[i].classList.remove('ticket__tab--show');
+          tabsList[i].classList.add('ticket__tab--hide');
+        }
+      }
+    });
+  });
+
+  // Scroll
+  anchor.addEventListener('click', function (event) {
+    event.preventDefault();
+    var block = anchor.getAttribute('href');
+    document.querySelector('' + block).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
 })();
