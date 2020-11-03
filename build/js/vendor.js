@@ -1,5 +1,5 @@
 /* eslint-disable */
-window.vendor = (function () {
+(function () {
 /**
  * Swiper 5.2.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -8628,12 +8628,4 @@ window.vendor = (function () {
   return Swiper;
 
 }));
-
-var swiper = function (el, obj) {
-  return new Swiper(el, obj);
-};
-
-return {
-  swiper: swiper
-};
 })();

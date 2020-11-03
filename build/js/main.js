@@ -1,14 +1,45 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 (function () {
-
-  var slider = document.querySelector('.swiper-container');
-  var slider1 = document.querySelector('.swiper-container-1');
-  var tabsBtnList = document.querySelectorAll('.ticket__limit-button');
   var anchor = document.querySelector('.header__link');
 
-  // Slider trainers
+  if (anchor) {
+    anchor.addEventListener('click', function (event) {
+      event.preventDefault();
+      var block = anchor.getAttribute('href');
+      document.querySelector('' + block).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  }
+})();
+
+/* eslint-disable no-unused-vars */
+'use strict';
+(function () {
+  var slider1 = document.querySelector('.swiper-container-1');
+
+  if (slider1) {
+    var mySwiper1 = new window.Swiper(slider1, {
+      loop: true,
+      slidesPerView: 1,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
+})();
+
+/* eslint-disable no-unused-vars */
+'use strict';
+(function () {
+  var slider = document.querySelector('.swiper-container');
+
   if (slider) {
-    var mySwiper = window.vendor.swiper(slider, {
+    var mySwiper = new window.Swiper(slider, {
       loop: true,
       slidesPerView: 1,
       slidesPerGroup: 1,
@@ -37,21 +68,12 @@
       }
     });
   }
+})();
 
-  // Slider review
-  if (slider1) {
-    var mySwiper1 = window.vendor.swiper(slider1, {
-      loop: true,
-      slidesPerView: 1,
+'use strict';
+(function () {
+  var tabsBtnList = document.querySelectorAll('.ticket__limit-button');
 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  }
-
-  // Ticket cards tab
   if (tabsBtnList) {
     tabsBtnList.forEach(function (button) {
       button.addEventListener('click', function () {
@@ -75,18 +97,6 @@
             }
           }
         }
-      });
-    });
-  }
-
-  // Scroll
-  if (anchor) {
-    anchor.addEventListener('click', function (event) {
-      event.preventDefault();
-      var block = anchor.getAttribute('href');
-      document.querySelector('' + block).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
       });
     });
   }
