@@ -1,24 +1,15 @@
-/* eslint-disable no-undef, no-unused-vars */
+/* eslint-disable no-unused-vars */
 'use strict';
 (function () {
 
-  var phoneInput = document.querySelector('#phone');
   var slider = document.querySelector('.swiper-container');
   var slider1 = document.querySelector('.swiper-container-1');
   var tabsBtnList = document.querySelectorAll('.ticket__limit-button');
   var anchor = document.querySelector('.header__link');
 
-  // Phone mask
-  var maskOptions = {
-    mask: '+{7}(000)000-00-00'
-  };
-  if (phoneInput) {
-    var mask = new IMask(phoneInput, maskOptions);
-  }
-
   // Slider trainers
   if (slider) {
-    var mySwiper = new Swiper(slider, {
+    var mySwiper = window.vendor.swiper(slider, {
       loop: true,
       slidesPerView: 1,
       slidesPerGroup: 1,
@@ -50,7 +41,7 @@
 
   // Slider review
   if (slider1) {
-    var mySwiper1 = new Swiper(slider1, {
+    var mySwiper1 = window.vendor.swiper(slider1, {
       loop: true,
       slidesPerView: 1,
 
