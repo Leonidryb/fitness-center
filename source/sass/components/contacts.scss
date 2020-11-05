@@ -17,7 +17,7 @@
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
-  text-transform: lowercase;
+  text-transform: uppercase;
   color: $blue;
   margin: 0;
   margin-bottom: 31px;
@@ -42,6 +42,7 @@
   line-height: 24px;
   color: $blue;
   margin-bottom: 2px;
+  margin-top: 19px;
 }
 
 .contacts__link {
@@ -51,7 +52,6 @@
   font-size: 14px;
   line-height: 21px;
   color: $blue;
-  margin-bottom: 19px;
 
   &:focus,
   &:hover {
@@ -63,6 +63,7 @@
     color: rgba(0, 178, 255, 0.5);
   }
 }
+
 
 .contacts__item p {
   display: block;
@@ -90,12 +91,17 @@
   }
 }
 
+.contacts__item--left b:first-of-type,
+.contacts__item--right b:first-of-type {
+  margin-top: 0;
+}
+
 @media (max-width: $tablet) {
   .contacts {
     width: 100%;
     min-height: 324px;
     padding: 69px 133px;
-    padding-bottom: 43px;
+    padding-bottom: 62px;
     border-top: none;
   }
 
@@ -123,7 +129,6 @@
   .contacts__link {
     font-size: 18px;
     line-height: 27px;
-    margin-bottom: 19px;
   }
 
   .contacts__item p {
@@ -146,7 +151,7 @@
     width: 100%;
     min-height: 386px;
     padding: 69px 15px;
-    padding-bottom: 43px;
+    padding-bottom: 62px;
   }
 
   .contacts h2 {

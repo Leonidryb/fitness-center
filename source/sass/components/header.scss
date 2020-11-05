@@ -60,6 +60,7 @@
 
 .header__text h1 {
   font-family: $font-bebas;
+  text-align: right;
   font-size: 109px;
   line-height: 109px;
   text-transform: uppercase;
@@ -165,7 +166,8 @@
   }
 
   .header__wrapper {
-    margin-top: 0;
+    width: 678px;
+    margin: 0 auto;
   }
 
   .header__text {
@@ -225,6 +227,10 @@
   .header__tel {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .header__wrapper {
+    width: auto;
   }
 
   .header__text {

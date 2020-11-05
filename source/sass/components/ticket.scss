@@ -8,13 +8,11 @@
     z-index: 1;
     content: "";
     position: absolute;
-    transform: rotate(-30deg);
-    bottom: -95px;
-    right: -108px;
-    width: 321px;
-    height: 384px;
-    background: url("../img/pancake@1x.png") no-repeat transparent;
-    background-size: 321px 384px;
+    bottom: -77px;
+    right: 0;
+    width: 287px;
+    height: 421px;
+    background: url("../img/pancake-desktop@1x.png") no-repeat transparent;
   }
 }
 
@@ -137,12 +135,11 @@
     padding-bottom: 100px;
 
     &::after {
-      bottom: -75px;
-      right: -10px;
-      width: 289px;
-      height: 345px;
-      background: url("../img/pancake@1x.png") no-repeat transparent;
-      background-size: 289px 345px;
+      bottom: -53px;
+      right: 0;
+      width: 347px;
+      height: 371px;
+      background: url("../img/pancake-tablet@1x.png") no-repeat transparent;
     }
   }
 
