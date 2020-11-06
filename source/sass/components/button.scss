@@ -19,7 +19,7 @@
 }
 
 .button--header {
-  max-width: 233px;
+  width: 233px;
 
   &:focus,
   &:hover {
@@ -76,7 +76,7 @@
 
 @media (max-width: $tablet) {
   .button--header {
-    max-width: 183px;
+    width: 183px;
   }
 
   .button--card {
@@ -95,7 +95,7 @@
 
 @media (max-width: $mobile) {
   .button--header {
-    max-width: 290px;
+    width: 290px;
   }
 
   .button--events {

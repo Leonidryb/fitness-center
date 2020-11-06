@@ -38,14 +38,28 @@
 }
 
 .header__text {
-  position: relative;
-  text-align: right;
-  padding-bottom: 44px;
-  margin-right: 5.6%;
-  margin-left: 8.44%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 377px;
+  min-height: 260px;
+  padding-bottom: 43px;
+  margin-left: 18px;
+  margin-right: 65px;
 }
 
-.header__text p {
+.header__text-wrapper {
+  width: 377px;
+  margin-bottom: 86px;
+}
+
+.header__sub-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__text span {
   font-family: $font-bebas;
   font-size: 49px;
   line-height: 59px;
@@ -58,9 +72,8 @@
   margin-bottom: 6px;
 }
 
-.header__text h1 {
+.header__text p {
   font-family: $font-bebas;
-  text-align: right;
   font-size: 109px;
   line-height: 109px;
   text-transform: uppercase;
@@ -69,25 +82,19 @@
   letter-spacing: 0.03em;
 
   margin: 0;
-  margin-bottom: 58px;
 }
 
 .header__list {
   @include list-reset;
-
-  position: absolute;
-  top: 195px;
-  left: -80px;
 
   font-family: $font-roboto;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color: $white;
-}
-
-.header__link {
-  margin-left: 65px;
+  text-align: right;
+  width: 113px;
+  margin-top: -90px;
 }
 
 .header__img {
@@ -171,26 +178,30 @@
   }
 
   .header__text {
-    margin-left: 76px;
-    margin-right: 30px;
+    width: 324px;
+    min-height: 309px;
+    margin: 0;
     padding-bottom: 24px;
   }
 
-  .header__text p {
+  .header__text-wrapper {
+    width: 324px;
+    margin-bottom: 58px;
+  }
+
+  .header__text span {
     font-size: 34px;
     line-height: 41px;
     margin-bottom: 1px;
   }
 
-  .header__text h1 {
+  .header__text p {
     font-size: 86px;
     line-height: 86px;
-    margin-bottom: 42px;
   }
 
   .header__list {
-    top: 136px;
-    left: -75px;
+    margin-top: -80px;
   }
 
   .header__img {
@@ -238,21 +249,24 @@
     margin: 0 auto;
   }
 
-  .header__text p {
+  .header__text-wrapper {
+    width: 290px;
+    margin-bottom: 53px;
+  }
+
+  .header__text span {
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 7px;
   }
 
-  .header__text h1 {
+  .header__text p {
     font-size: 78px;
     line-height: 78px;
-    margin-bottom: 44px;
   }
 
   .header__list {
-    top: 125px;
-    left: 0;
+    margin-top: -72px;
   }
 
   .header__img {

@@ -50,14 +50,20 @@
         <a class="header__tel" href="tel:88005555555">8-800-555-55-55</a>
       </div>
       <div class="header__wrapper">
+        <h1 class="visually-hidden">Фитнес Центр SUPERGYM</h1>
         <div class="header__text">
-          <p>Омск</p>
-          <h1>Фитнес<br> центр</h1>
-          <ul class="header__list">
-            <li>Тренажёрный зал</li>
-            <li>Групповые занятия</li>
-            <li>Кардио-зона</li>
-          </ul>
+          <div class="header__text-wrapper">
+            <div class="header__sub-wrapper">
+              <span>Омск</span>
+              <p>Фитнес</p>
+              <p>Центр</p>
+            </div>
+            <ul class="header__list">
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+          </div>
           <a class="header__link button button--header" href="#ticket">Купить абонемент</a>
         </div>
         <div class="header__img">
@@ -237,211 +243,213 @@
       </div>
     </section>
     <section class="trainers" id="trainers">
-      <div class="trainers__container swiper-container">
+      <div class="trainers__container">
         <h2>Тренеры</h2>
-        <ul class="trainers__list swiper-wrapper">
+        <div class="swiper-container">
+          <ul class="trainers__list swiper-wrapper">
 
-          <li class="trainers__item swiper-slide">
-            <h3>Анна Павлова</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-1@1x.webp 1x, img/trainer-1@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-1@1x.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Анны Павловой">
-            </picture>
-            <div class="trainers__about">
-              <p>Анна Павлова</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide">
+              <h3>Анна Павлова</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-1@1x.webp 1x, img/trainer-1@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-1@1x.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Анны Павловой">
+              </picture>
+              <div class="trainers__about">
+                <p>Анна Павлова</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <h3>Алексей Лавров</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-2@1x.webp 1x, img/trainer-2@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-2@1x.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
-            </picture>
-            <div class="trainers__about">
-              <p>Алексей Лавров</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide">
+              <h3>Алексей Лавров</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-2@1x.webp 1x, img/trainer-2@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-2@1x.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
+              </picture>
+              <div class="trainers__about">
+                <p>Алексей Лавров</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <h3>Александр Пашков</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-3@1x.webp 1x, img/trainer-3@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-3@1x.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Александра Пашкова">
-            </picture>
-            <div class="trainers__about">
-              <p>Александр Пашков</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide">
+              <h3>Александр Пашков</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-3@1x.webp 1x, img/trainer-3@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-3@1x.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Александра Пашкова">
+              </picture>
+              <div class="trainers__about">
+                <p>Александр Пашков</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <h3>Мария Кетова</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-4@1x.webp 1x, img/trainer-4@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-4@1x.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Марии Кетовой">
-            </picture>
-            <div class="trainers__about">
-              <p>Мария Кетова</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide">
+              <h3>Мария Кетова</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-4@1x.webp 1x, img/trainer-4@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-4@1x.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Марии Кетовой">
+              </picture>
+              <div class="trainers__about">
+                <p>Мария Кетова</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="trainers__item swiper-slide no-js">
-            <h3>Анна Павлова</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-1@1x.webp 1x, img/trainer-1@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-1@1x.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Анны Павловой">
-            </picture>
-            <div class="trainers__about">
-              <p>Анна Павлова</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide no-js">
+              <h3>Анна Павлова</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-1@1x.webp 1x, img/trainer-1@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-1@1x.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Анны Павловой">
+              </picture>
+              <div class="trainers__about">
+                <p>Анна Павлова</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="trainers__item swiper-slide no-js">
-            <h3>Алексей Лавров</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-2@1x.webp 1x, img/trainer-2@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-2@1x.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
-            </picture>
-            <div class="trainers__about">
-              <p>Алексей Лавров</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide no-js">
+              <h3>Алексей Лавров</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-2@1x.webp 1x, img/trainer-2@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-2@1x.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
+              </picture>
+              <div class="trainers__about">
+                <p>Алексей Лавров</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="trainers__item swiper-slide no-js">
-            <h3>Александр Пашков</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-3@1x.webp 1x, img/trainer-3@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-3@1x.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Александра Пашкова">
-            </picture>
-            <div class="trainers__about">
-              <p>Александр Пашков</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide no-js">
+              <h3>Александр Пашков</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-3@1x.webp 1x, img/trainer-3@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-3@1x.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Александра Пашкова">
+              </picture>
+              <div class="trainers__about">
+                <p>Александр Пашков</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="trainers__item swiper-slide no-js">
-            <h3>Мария Кетова</h3>
-            <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" srcset="img/trainer-4@1x.webp 1x, img/trainer-4@2x.webp 2x">
-              <!-- 1х: 260px; 2x: 520px -->
-              <img src="img/trainer-4@1x.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Марии Кетовой">
-            </picture>
-            <div class="trainers__about">
-              <p>Мария Кетова</p>
-              <span class="trainers__about-specialization">CrossFit</span>
-              <ul class="trainers__about-list">
-                <li class="trainers__about-item">
-                  Certified Level 3 Trainer
-                </li>
-                <li class="trainers__about-item">
-                  Победитель чемпионата России по CrossFit
-                </li>
-                <li class="trainers__about-item">
-                  Опыт &#8211; 6 лет
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="trainers__item swiper-slide no-js">
+              <h3>Мария Кетова</h3>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/trainer-4@1x.webp 1x, img/trainer-4@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <img src="img/trainer-4@1x.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Марии Кетовой">
+              </picture>
+              <div class="trainers__about">
+                <p>Мария Кетова</p>
+                <span class="trainers__about-specialization">CrossFit</span>
+                <ul class="trainers__about-list">
+                  <li class="trainers__about-item">
+                    Certified Level 3 Trainer
+                  </li>
+                  <li class="trainers__about-item">
+                    Победитель чемпионата России по CrossFit
+                  </li>
+                  <li class="trainers__about-item">
+                    Опыт &#8211; 6 лет
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
       </div>
         <button class="trainers__button trainers__button--prev swiper-button-prev" type="button">
           <span class="visually-hidden">Переключение слайдера назад</span>
@@ -522,41 +530,43 @@
       </div>
     </section>
     <section class="review">
-      <div class="review__container container swiper-container-1">
+      <div class="review__container">
         <h2>Отзывы</h2>
-        <ul class="review__list swiper-wrapper">
-          <li class="review__item swiper-slide">
-            <div class="review__img">
-              <picture>
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp" srcset="img/review@1x.webp 1x, img/review@2x.webp 2x">
+        <div class="swiper-container-1">
+          <ul class="review__list swiper-wrapper">
+            <li class="review__item swiper-slide">
+              <div class="review__img">
+                <picture>
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp" srcset="img/review@1x.webp 1x, img/review@2x.webp 2x">
 
-                <!-- 1х: 80px; 2x: 160px -->
-                <img src="img/review@1x.png" srcset="img/review@2x.png 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
-              </picture>
-            </div>
-            <div class="review__text">
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-          </li>
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="img/review@1x.png" srcset="img/review@2x.png 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
+                </picture>
+              </div>
+              <div class="review__text">
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </li>
 
-          <li class="review__item no-js swiper-slide">
-            <div class="review__img">
-              <picture>
-                <!-- 1х: 80px; 2x: 160px -->
-                <source type="image/webp" srcset="img/review@1x.webp 1x, img/review@2x.webp 2x">
+            <li class="review__item no-js swiper-slide">
+              <div class="review__img">
+                <picture>
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <source type="image/webp" srcset="img/review@1x.webp 1x, img/review@2x.webp 2x">
 
-                <!-- 1х: 80px; 2x: 160px -->
-                <img src="img/review@1x.png" srcset="img/review@2x.png 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
-              </picture>
-            </div>
-            <div class="review__text">
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-          </li>
-        </ul>
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="img/review@1x.png" srcset="img/review@2x.png 2x" width="80" height="80" alt="Фотография клиента  Анны Орловой">
+                </picture>
+              </div>
+              <div class="review__text">
+                <h3>Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <button class="review__button review__button--prev swiper-button-prev" type="button">
         <span class="visually-hidden">Переключение слайдера назад</span>

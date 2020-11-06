@@ -40,6 +40,10 @@
   width: 260px;
 }
 
+.review {
+  width: 560px;
+}
+
 .swiper-container-1 {
   width: 560px;
   overflow: hidden;
@@ -52,11 +56,11 @@
 
 .review .swiper-button-prev {
   top: 262px;
-  left: 0;
+  left: -55px;
 }
 
 .review .swiper-button-next {
-  right: 0;
+  right: -55px;
   top: 262px;
 }
 
@@ -81,6 +85,10 @@
 
   .swiper-slide {
     width: 268px;
+  }
+
+  .review {
+    width: 566px;
   }
 
   .swiper-container-1 {
@@ -128,6 +136,10 @@
     background: transparent url("../img/icon-btn-prev-small.svg") no-repeat 0 0;
   }
 
+  .review {
+    width: 226px;
+  }
+
   .swiper-container-1 {
     width: 226px;
     min-width: 226px;
@@ -137,8 +149,13 @@
     width: 226px;
   }
 
-  .review .swiper-button-prev,
+  .review .swiper-button-prev {
+    top: 264px;
+    left: -32px;
+  }
+
   .review .swiper-button-next {
-    top: 265px;
+    right: -32px;
+    top: 264px;
   }
 }
